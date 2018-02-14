@@ -1,10 +1,11 @@
-﻿using System;
-
-class Program
+﻿class Program
 {
     static void Main()
     {
-        var s = string.Format($"[{10:C}][{20:C}][{30:C}]");
-        Console.WriteLine(s);
+        var a = "Taro";
+        var b = "Ichiro";
+        var c = "Pochi";
+        var s = $"[{a,7}][{b,7}][{c,7}]";
+        System.Console.WriteLine(s);
     }
 }
