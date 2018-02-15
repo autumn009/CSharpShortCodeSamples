@@ -18,7 +18,7 @@ class Program
         {
             lock (o)
             {
-                if (n == 5)
+                if (n >= 5)
                 {
                     if (lazy == null) lazy = new Worker();
                     Console.WriteLine(n * lazy.GetValue());
@@ -30,6 +30,6 @@ class Program
     static void Main()
     {
         sub(5);
-        sub(6);
+        sub(7);
     }
 }
