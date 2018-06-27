@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
-class SapmleEnumrator : IEnumerator<int>
+class SampleEnumrator : IEnumerator<int>
 {
     private int count = -1;
     public int Current
@@ -30,7 +30,7 @@ class Sample : IEnumerable<int>
 {
     public IEnumerator<int> GetEnumerator()
     {
-        return new SapmleEnumrator();
+        return new SampleEnumrator();
     }
     IEnumerator IEnumerable.GetEnumerator()
     {
